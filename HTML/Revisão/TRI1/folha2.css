@@ -1,0 +1,12 @@
+
+    #body{background-color: #c0c0c0; }
+    img{width: 250px; height: 250px; float: left}
+    p{font-size: 150%}
+    .borda{border-radius: 10px; border-style: solid; border-color: gray;
+          border-width: 10px; margin: 7px; border-block-color: #4e4e4e;
+          background-color: #acabab; border-top-right-radius: 50px;}
+    #lk1{position: relative; top: 10px}
+    .bordalink1{border-style: solid; border-color: black;
+    border-width: 10px; margin: 7px;}
+    .bordaimg1{border-style: solid; border-color: black;
+        border-width: 10px; margin: 7px;}

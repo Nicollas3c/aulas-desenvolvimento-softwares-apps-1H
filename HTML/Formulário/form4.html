@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Pest Shop</title>
+    </head>
+    <body>
+        <h1>Cadastro dos animais de estimação</h1>
+        <form id="frmcad">
+
+        <p>nome do responsável do pet:  
+            <input type="text" id="txtnome" size="40" maxlength="38" /> </p>
+
+            <p>digite o nome ou apelido do PET: 
+                <input type="text" id="txtnome" size="20" maxlength="38"/> </p>
+
+        <p>
+            Endereço: <input type="text" id="txtender" size="58" maxlength="38"/> </p>
+
+        <p>Sexo:
+            <input type="radio" id="radsex1" name="sexo" /> macho
+            <input type="radio" id="radsex2" name="sexo" checked="checked" /> fêmea
+            <input type="radio" id="radsex3" name="sexo" /> outro </p>
+
+        <p>Situação:
+            <input type="checkbox" id="chkflh" value="1" /> filhote
+            <input type="checkbox" id="chkcas" value="1" /> castrado
+            <input type="checkbox" id="chkped" value="1" /> pedgree 
+            <input type="checkbox" id="chkvac" value="1" /> vacinado </p>
+
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Assinale o tipo do PET:
+            <select id=" lstper">
+                <option value="c"> cachorro </option>
+                <option selected="selected" value="g"> gato </option>
+                <option value="a"> ave </option>
+                <option value="r"> roedor </option>
+                <option value="l"> lagarto </option>
+                <option value="p"> peixe </option>
+                <option value="o"> outros </option>
+            </select> </p>
+
+                <p>
+                    <input type="submit" value="confirma o cadastro do pet" />
+                    <input type="reset" value="limpar tudo" />
+                    <input type="button" /> </p>
+                    
+            </form>
+        </body>
+</html>
+                

@@ -1,0 +1,50 @@
+<html>
+    <head> <title>CLIENTES</title> 
+            <link rel="stylesheet" href="folha1.css" type="text/css">
+    </head>
+    <body>
+        <form action="endereço.html" id="CadCli" method="POST" onsubmit="validar()">
+        <fieldset id="fds1"> <legend> Cadastro de Clientes </legend>
+            
+            <label for="txtnomealu" class="esquerda">Nome do Aluno </label>
+                <input type="text" id="txtnomealu" size="40" maxlength="38" class="posi"/> <br/> <br/> 
+                
+            <label class="esquerda">Data de Nascimento </label>
+            <div id="grupoidade" class="posi">
+                <input type="text" id="txtdia" size="3" maxlength="2"/> /
+                <input type="text" id="txtmes" size="3" maxlength="2"/> /
+                <input type="text" id="txtano" size="3" maxlength="2"/> 
+            </div> <br/> <br/>
+            <label for="txtnomeresp" class="esquerda" >Nome do Responsável </label>
+                <input type="text" id="txtresp" size="40" maxlength="38" class="posi"/>
+                <br/> <br/>
+        </fieldset>
+
+        <fieldset id="fds2"> <legend>Informação de Matrícula</legend>
+                <label for="lstserie" class="posi1"> Série: </label> 
+                    <select id="sltserie" class="posi1">
+                        <option value="pr">pré escolar</option>
+                        <option value="fu">fundamental</option>
+                        <option value="me" selected="selected" >médio</option>
+                    </select>
+
+                <label class="posi2"> Turno: <br/>
+                <input type="radio" id="radman" value="m" class="posi2" name="turno">
+                <label class="posi2">manhã</label> <br/>
+                <input type="radio" id="radtar" value="t" name="opc" class="posi2" checked="checked">
+                <label class="posi2">tarde</label>
+                </label>
+
+                <label class="posi3"> Atividade Extra Curricular: <br/> </label>
+                <input type="checkbox" id="chkbal" value="ok" class="posi4">
+                <label class="posi4">ballet</label> <br/>
+                <input type="checkbox" id="chknat" value="ok" class="posi4"> 
+                <label class="posi4">natação</label> <br/>
+                <input type="checkbox" id="chkyog" value="ok" class="posi4"> 
+                <label class="posi4">ioga</label>
+        </fieldset>
+        <input type="reset" value="Apagar as Informações"/>
+        <input type="submit" value="Confirma o Cadastro"/>
+        </form>
+    </body>
+</html>

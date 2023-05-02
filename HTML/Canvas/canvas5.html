@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Uso de Canvas</title> </head>
+    <script>
+      function criar() {
+          var c = document.getElementById("area1");
+          var controle = c.getContext("2d");
+          controle.beginPath();
+          controle.moveTo(50,0)
+          controle.lineTo(300,300)
+          controle.lineTo(0,300)
+          controle.lineTo(50,0)
+          controle.stroke();
+      }
+    </script>
+    <body onload="criar()">
+        <canvas id="area1" width="500" height="500">
+         seu browser não suporta html 5
+        </canvas>
+        <h1> altere o ultimo valor para fechar o triangulo</h1>
+    </body>
+</html>

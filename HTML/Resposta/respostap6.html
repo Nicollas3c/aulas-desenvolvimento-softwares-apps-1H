@@ -1,0 +1,30 @@
+<html>
+    <head>  <title>HEAVY MP3</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="respostap6.css" type="text/css"/>
+    <script type="text/javascript">
+    function exibirnome() {
+        window.alert("Nicollas Cardoso Cavalcante Correia")
+        }
+    function pegartexto(caixa) {
+        var texto;
+        texto = caixa.value;
+        window.alert(texto) 
+    }
+    </script>
+    </head>
+    <body onload="exibirnome()">
+        <form>
+            <p>Como você se avalia estudante? <br/>
+            <input type="radio" id="rdru" name="radio">melhor não comentar <br/>
+            <input type="radio" id="rdru" name="radio">não estudo, não presto atenção, não faço atividades <br/>
+            <input type="radio" id="rdfr" name="radio">estudo, não presto atenção, não faço atividades <br/>
+            <input type="radio" id="rdme" name="radio">estudo, presto atenção, não faço atividades <br/>
+            <input type="radio" id="rdru" checked="checked" name="radio">estudo, presto atenção, faço atividades
+            </p>
+            <label>Comentário</label>
+            <textarea rows="6" cols="50" id="text" onblur="pegartexto(this)"></textarea> <br/>
+            <input type="submit" value="Envia Resposta"/>
+        </form>
+    </body>
+</html>

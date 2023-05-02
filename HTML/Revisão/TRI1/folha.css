@@ -1,0 +1,8 @@
+
+    body{background-color: #c0c0c0}
+    img{width: 200px; height: 200px; float: left}
+    p{font-size: 150%}
+    .borda{border-style: solid; border-color: #ccffff;
+          border-width: 10px; margin: 7px}
+    #lk1{position: relative; top: 10px}
+

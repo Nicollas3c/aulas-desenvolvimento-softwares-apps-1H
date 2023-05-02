@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Revisão 2tri</title>
+        <link rel="stylesheet" href="rev1.css">
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+        function botão() {
+        window.alert("Oi")
+    }
+        </script>
+    </head>
+    <body>
+        <form class="borda">
+            <h4>Nome:</h4>
+            <input type="text" id="texto" size="20" maxlength="20"> <br/>
+            <input type="radio" id="rd1" name="radio" checked="checked" value="enviar"/> m
+            <input type="radio" id="rd2" name="radio" value="enviar"> f <br/>
+            <select id="slct1">
+                    <option value="d"> desempregado </option>
+                    <option selected="selected" value="et"> estudante </option>
+                    <option value="e"> empregado </option> 
+                </select> <br/>
+                <h4>Reclamação:</h4>
+                <textarea id="bigtext" cols="30" rows="10"></textarea> <br/>
+                <input type="reset" value="Resetar">
+                <input type="button" value="botão" onclick="botão()"> <br/>
+            <input type="submit" onsubmit="enviar()"/>         
+        </form>
+    </body>
+</html>

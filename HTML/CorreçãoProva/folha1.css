@@ -1,0 +1,12 @@
+body {font-weight: bold;}
+input {font-weight: bold; border-radius: 3px; margin: 3px;}
+form {border-style: solid; min-width: 800px; border-radius: 3px;}
+select {font-weight: bold;}
+fieldset {width: 75%; min-width: 600px; border-radius: 3px;}
+.posi {position: absolute; left: 300px;}
+.esquerda {position: absolute; margin-left: 100px;}
+#grupoidade {display: inline;}
+.posi1 {position: relative; left: 10px;}
+.posi2 {position: relative; left: 100px;}
+.posi3 {position: relative; left: 300px; top: -50px;}
+.posi4 {position: relative; left: 380px; top: -50px;}

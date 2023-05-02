@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+        input{border-style: solid; border-color: #0000ff;
+              border-radius: 5px; box-shadow: 3px 3px blue;}
+            #texto{background-color: #0000ff; color: rgba(0, 0, 0, 0.3);}
+        </style>
+        <script type="text/javascript">
+          function exibir(){
+              window.alert("boa tarde");
+          }
+          function exibir1(){
+              window.alert("clicou")
+          }
+        </script>
+    </head>
+    <body onload="exibir()">
+   <form id="frmcadastro" action="destino.html" method="post">
+       <h1 id="texto">Cadastro de Aluno</h1>
+        <p>digite o nome:
+                  <input type="text" id="txtnome" size="40" maxlength="38" class="fundo"/> </p>
+        <p id="texto2">Endereço:
+                  <input type="text" id="txtender" size="60" maxlength="58"> </p>
+        <p>Sexo:
+               <input type="radio" id="radsex1" name="sexo" /> masculino
+               <input type="radio" id="radsex2" name="sexo" checked="checked" /> feminino </p>
+        <p>Situação:
+               <input type="checkbox" id="chkemp" value="1" /> empregado
+               <input type="checkbox" id="chkcas" value="1" /> casado
+               <input type="checkbox" id="chkest" value="1" /> estudante </p>
+        <p>Periodo:
+               <select id=" lstper">
+                   <option value="m"> manhã </option>
+                   <option selected="selected" value="t"> tarde </option>
+                   <option value="n"> noite </option>
+               </select> </p>
+        <p>Observação:
+                   <textarea id="txtobs" cols="50" rows="5">
+                   </textarea>
+        <br/>
+                   <input type="reset" value="limpar tudo" />
+                   <input type="submit" value="confirma o cadastro" />
+                    <input type="button" value="Mensagem" onclick="exibir1()"> </p>
+          </form>
+      </body>
+</html>

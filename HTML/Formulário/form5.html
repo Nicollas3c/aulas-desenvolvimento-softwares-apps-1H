@@ -1,0 +1,41 @@
+ <html>
+     <head><title>Cadastro</title>
+     <meta charset="utf-8"/>
+       <link rel="stylesheet" href="folha1.css" type="text/css"/>
+       </head>
+       <body>
+           <h1>Cadastro de Aluno</h1>
+           <form action="processa.html" id="frmcadastro" method="get">
+               <p>digite o nome:
+                   <input type="text" id="txtnome" size="40" maxlength="38"/>
+               </p>
+               <p>Endereço:
+                   <input type="text" id="txtender" size="60" maxlength="58">
+               </p>
+               <p>Sexo:
+                <input type="radio" id="radsex1" name="sexo" /> masculino
+                <input type="radio" id="radsex2" name="sexo" checked="checked" /> feminino 
+               </p>
+               <p>Situação:
+                <input type="checkbox" id="chkemp" value="1" /> empregado
+                <input type="checkbox" id="chkcas" value="1" /> casado
+                <input type="checkbox" id="chkest" value="1" /> estudante 
+               </p>
+               <p>Periodo:
+                <select id=" lstper">
+                    <option value="m"> manhã </option>
+                    <option selected="selected" value="t"> tarde </option>
+                    <option value="n"> noite </option>
+                </select> 
+               </p>
+               <p>Observação:
+                    <textarea id="txtobs" cols="50" rows="5">
+                    </textarea> 
+               </p>
+               <p>
+                    <input type="reset" value="limpar tudo" />
+                    <input type="submit" value="confirma o cadastro" />
+               </p>
+           </form>
+       </body>
+ </html>

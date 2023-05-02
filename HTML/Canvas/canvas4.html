@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Uso de Canvas</title> </head>
+    <script>
+      function criar() {
+          var c = document.getElementById("area1");
+          var controle = c.getContext("2d");
+          controle.moveTo(0,0)
+          controle.lineTo(200,100)
+          controle.stroke();
+      }
+    </script>
+    <body onload="criar()">
+        <canvas id="area1">
+         seu browser não suporta html 5
+        </canvas>
+    </body>
+</html>
