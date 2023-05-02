@@ -1,0 +1,88 @@
+<html>
+    <head> 
+        <title>Petz</title> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="folha1.css" type="text/css">
+        <script type="text/javascript">
+            function testar() {
+                var pet = document.getElementById("txtpet").value
+                var peso = document.getElementById("txtpes").value
+                if (pet == "") {
+                    window.alert("Digite o Nome")
+                    document.getElementById("txtpet").focus()
+                    document.getElementById("txtpet").style.backgroundColor = " #f00"
+                    document.getElementById("txtpet").value = ""
+                    return false
+                }
+                else {
+                    document.getElementById("txtpet").style.backgroundColor = " #0f0"
+                }
+                if (isNaN(peso)) {
+                    window.alert("Digite Apenas Números")
+                    document.getElementById("txtpes").focus()
+                    document.getElementById("txtpes").style.backgroundColor = " #f00"
+                    document.getElementById("txtpes").value = ""
+                    return false
+                }
+                else if (peso <= 0) {
+                    window.alert("Digite Apenas Números Acima de 0")
+                    document.getElementById("txtpes").focus()
+                    document.getElementById("txtpes").style.backgroundColor = " #f00"
+                    document.getElementById("txtpes").value = ""
+                    return false
+                }
+                else {
+                    document.getElementById("txtpes").style.backgroundColor = " #0f0"
+                }
+                return true
+            }
+            
+            function sel1() {
+                if (document.getElementById("rdmac").checked) {
+                    document.getElementById("rdfem").checked = false
+                }
+                else {
+                document.getElementById("rdmac").checked = false
+                }
+            }
+
+            function sel2() {
+                if (document.getElementById("rdfem").checked) {
+                    document.getElementById("rdmac").checked = false
+                }
+                else {
+                    document.getElementById("rdfem").checked = false
+                }
+            }
+            </script>
+    </head>
+    <body onsubmit="return testar()">
+        <form action="processa.html" id="CadCli" method="POST">
+        <fieldset id="fds1"> <legend> Cadastro de Pet </legend>
+
+            <label for="txtpet" class="esquerda" >Nome do Pet </label>
+                <input type="text" id="txtpet" size="40" maxlength="38" class="posi"/>
+                <br/> <br/>       
+
+                <label for="txtpes" class="esquerda" >Peso do Pet</label>
+                <input type="text" id="txtpes" size="4" maxlength="3" class="posi"/>
+                <br/> <br/> 
+                
+                <label  class="esquerda" >Sexo do Pet: 
+                    <br/>  
+                   <label class="mover"> macho </label> <input type="radio" id="rdmac" class="posi" onclick="sel1()"/> 
+                    <br /> 
+                    <label class="mover">fêmea </label>  <input type="radio" id="rdfem" class="posi" onclick="sel2()"/>
+                </label>
+               
+                <br/> <br/><br/> <br/> <br/> 
+        </fieldset>
+        <input type="submit" value="Confirma o Cadastro"/>
+        <p>Verificar somente se o nome do pet está vazio 1 ponto.</p>
+        <p>Verificar se txtpes é número  1 ponto.</p>
+        <p>Verificar se txtpes não é zero ou negativa 1 ponto</p>
+        <p>Quando selecionar um sexo desabilita o outro através da programação 1 ponto</p>
+        <p>Se alterar os ids não será avaliado.</p>
+        </form>
+    </body>
+</html>
