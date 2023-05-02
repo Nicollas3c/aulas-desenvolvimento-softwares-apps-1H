@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Cadastro de Aluno</title>
+        <script type="text/javascript">
+                function carregar() {
+                    function validar(caixa) {
+                        if (caixa.value == "") {
+                        caixa.focus();
+                        caixa.value = "digite aqui";
+                        caixa.style.backgroundColor = "#f00";
+                        }
+                        else {
+                        caixa.style.backgroundColor = "#fff";
+                        }
+                    }
+                    function limpar(caixa) {
+                        caixa.style.backgroundColor = "#fff"
+                        caixa.value = "";
+                    }
+
+                    var objeto = document.getElementById("txtid");
+                    objeto.addEventListener('focusout', function() {
+                        validar(objeto)}, false);
+ 
+                    var objeto2 = document.getElementById("txtser");
+                    objeto2.addEventListener('focusout', function() {
+                        validar(objeto2)}, false);
+
+                        objeto.addEventListener('click', function() {
+                        validar(objeto)}, false);
+
+                        objeto2.addEventListener('click', function() {
+                        validar(objeto2)}, false);
+                }
+         </script>
+    </head>
+    <body onload="carregar()">
+        <form>
+            <label>Idade <input type="text" id="txtid"> </label>
+            <label>Série <input type="text" id="txtser"> </label>
+            <p>Passando um parâmetro para a função</p>
+        </form>
+    </body>
+</html>

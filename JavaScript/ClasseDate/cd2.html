@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Cadastro de Aluno</title>
+        <script type="text/javascript">
+            function exibir() {
+                var tempo = new Date()
+                var hora = tempo.getHours()
+                var minuto = tempo.getMinutes()
+                var nome = window.prompt("digite seu nome: ","nome")
+                var junta = nome + " são " + hora + " horas " + minuto + " minutos e " + segundo + " segundos"
+                window.alert(junta)
+            }
+        </script>
+    </head>
+    <body>
+        <h1>O Brasílio não para...</h1>
+        <input type="button" value="Horário" onclick="exibir()">
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>MacBife X</title>
+        <script type="text/javascript" src="codigo.js">
+        </script>
+    </head>
+    <body onload="carregar()">
+        <form id="CadReserva" action="destino.html" onsubmit="return verificar()">
+            <fieldset>
+                <legend>Sistema de Reserva</legend>
+
+                <label>Entre o Número de Pessoas para a Reserva:</label>
+                <input type="text" id="txtPratPrin" size="30" maxlength="29">
+
+                <label>Tipo de Jantar</label>
+                <input type="radio" id="radtip1" value="N" checked = "checked" onclick="ticar1()" > normal
+                <input type="radio" id="radtip2" value="V" onclick="ticar2()" > vegetariano <br>
+
+                <label>Nome do Responsável pela Reserva</label>
+                <input type="text" id="txtResp" size="30" maxlength="29"> <br>
+
+            <input type="submit" value="confirma a digitação">
+            </fieldset>
+        </form>
+    </body>
+</html>

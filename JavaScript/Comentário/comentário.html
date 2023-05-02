@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Comentário</title>
+    <script type="text/javascript">
+        function comentario() {
+            var comentario = document.getElementById("txtcomentario").value
+            
+            if (comentario == "") {
+                window.alert("Digite Algo")
+                document.getElementById("txtcomentario").value = ""
+                document.getElementById("txtcomentario").style.backgroundColor = "#f00"
+                document.getElementById("txtcomentario").focus()
+                return false
+            }
+            else if (isNaN(comentario)) {
+                window.alert("Digite Apenas Números")
+                document.getElementById("txtcomentario").value = ""
+                document.getElementById("txtcomentario").style.backgroundColor = "#f00"
+                document.getElementById("txtcomentario").focus()
+                return false
+            }
+            else {
+                window.alert("Comentário OK")
+                document.getElementById("txtcomentario").style.backgroundColor = "#0f0"
+                return true
+            }
+        }
+    </script>
+</head>
+<body onsubmit="return comentario()">
+    <form action="destino.html">
+        <fieldset>
+        <legend>Comentário</legend>
+        <input type="text" id="txtcomentario" size="40" maxlength="30"> <br> <br>
+        <input type="submit" value="Confirmar">
+        </fieldset>
+    </form>
+</body>
+</html>

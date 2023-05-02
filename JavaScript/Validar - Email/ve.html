@@ -1,0 +1,48 @@
+<html>
+  <head>  
+    <title>Cadastro de Responsável2</title>
+    <link href="folha.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function testar() {
+            var email = document.getElementById("txtmail").value
+            if (email == "") {
+                window.alert("digite o email")
+                document.getElementById("txtmail").focus()
+                document.getElementById("txtmail").style.backgroundColor = "#f00"
+                return false
+            }
+            else if (email.indexOf("@") == -1) {
+                window.alert("email incorreto")
+                document.getElementById("txtmail").focus()
+                document.getElementById("txtmail").style.backgroundColor = "#f00"
+                document.getElementById("txtmail").value = ""
+                return false
+            }
+            else {
+                window.alert("cadastro ok")
+                return true
+            }
+        }
+
+
+    </script>
+  </head>
+  <body>
+    <form id="frmcadastro" action="destino.html"  method="post" onSubmit="return testar()">
+      <label for="txtmail">Email</label>
+      <input type="text" id="txtmail" size="13" maxlength="12">  <br /> <br />
+      <input type="submit" value="Confirmar os Dados" /> 
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

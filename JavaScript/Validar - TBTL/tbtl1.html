@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Cadastro de Aluno</title>
+        <script type="text/javascript">
+                function t1() {
+                    var c1 = document.getElementById("txtid").value;
+                    if (c1 == "") {
+                        document.getElementById("txtid").focus();
+                        document.getElementById("txtid").value = "digite aqui";
+                        document.getElementById("txtid").style.backgroundColor = "#f00";
+                    }
+                    else {
+                        document.getElementById("txtid").style.backgroundColor = "#fff"
+                    }
+                }
+                function t2() {
+                    var c2 = document.getElementById("txtser").value;
+                    if (c2 == "") {
+                        document.getElementById("txtser").focus();
+                        document.getElementById("txtser").value = "digite aqui";
+                        document.getElementById("txtser").style.backgroundColor = "#f00";
+                    }
+                }    
+         </script>
+    </head>
+    <body>
+        <form>
+            <label>Idade <input type="text" id="txtid" onFocusOut="t1()"> </label>
+            <label>Série <input type="text" id="txtser" onFocusOut="t2()"> </label>
+            <p>Observe que poderíamos utilizar onBlur no lugar de onFocusOut</p>
+        </form>
+    </body>
+</html>

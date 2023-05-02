@@ -1,0 +1,39 @@
+<html>
+    <head> <title>Tamanho da Tela </title>
+            <meta charset="utf-8">
+            <style type="text/css">
+            @media (max-width: 600px) {
+                body {
+                    background-color: #0000ff;
+                }
+            }
+            @media (min-width: 900px) {
+                body {
+                    background-color: #ff0000;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 899px) {
+                body {
+                    background-color: #00ff00;
+                }
+            }
+            </style>
+            <script type="text/javascript">
+                function mostrar() {
+                    var altura, largura;
+                    largura = window.screen.width;
+                    altura = window.screen.height
+                    window.alert("altura: " + altura + ' ' + "largura: " + largura)
+                    largura2 = window.innerWidth;
+                    altura2 = window.innerHeight;
+                    window.alert("altura2: " + altura2 + ' ' + "largura2: " + largura2)
+                }
+            </script>
+    </head>
+    <body>
+        <form>
+            <h1>Redimensione o browser e clique no botão</h1>
+            <input type="button" value="Exibir Tamanho do Monitor" onclick="mostrar()">
+        </form>
+    </body>
+</html>
