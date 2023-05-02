@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+formulário html 5
+</title>
+<meta charset="utf-8">
+<link rel= "stylesheet" href="Base.css" type="text/css">
+<body>
+    <header id="header">
+        <h1 id="title">Formulário HTML 5</h1> <br>
+       <nav id="nav">
+        <a href="EMPR.html">EMPR</a>
+        <a href="ESMD.html">ESMD</a>
+        <a href="LOGB.html">LOGB</a>
+        <a href="PRIT.html">PRIT</a>
+        <a href="FUTI.html">FUTI</a> 
+        <br> <br>
+        <h1 class="tituloForm"> Voltar </h1> <br>
+        <a href="index.html" class="voltar">Voltar</a>
+        </nav>
+       </header>
+    <form>
+        <fieldset class="input1">
+        <legend> Cadastro Professor </legend>
+        <p> Nome:
+        <input type="text" id="txtnome" size="20" maxlength="25" required="required" pattern="[a-zA-Z\s]+$" /> </p>
+
+        <p> Idade:
+        <input type="number" required="required" pattern="[0-9]+$" min="0" max="130" id="txtidade" size="5" maxlength="3" /> </p>
+
+        <p> Email
+        <input type="email" id="txtemail" title="insira um email válido" required="required" /> </p>
+
+        <p> Disciplia professor
+        <select id="select1">
+        <option selected="selected" value="D">DSA1 </option>
+        <option value="ED">ESMD</option>
+        <option vale="FT">FUTI</option>
+        <option vale="LB">LOGB</option>
+        <option vale="EP">EMPR</option>
+        <option vale="PT">PRIT</option>
+        </p>     
+        </select>
+
+        </fieldset> <br>
+          <fieldset>
+            <legend> Qual sua opinião sobre a navegação entre as páginas: </legend>
+            <label for="selecOPINIÃO">Opcões:</label>
+                <select id="selecOPINIÃO">
+                <option selected="selected" value="mf">Muito fácil</option>
+                <option value="f">Fácil</option>
+                <option value="cp">Complicada</option>
+                <option value="mtcp">Muito Complicada</option>
+                </p>
+            </select> 
+        </fieldset> 
+        <fieldset>
+             <legend> Em relação a estética básica das páginas:</legend> 
+
+<label for="lstserie" >Opções:</label>  
+
+    <select id="sltserie" class="posi1"> 
+        <option value="ft" selected="selected">Faltou muita  coisa a ser trabalhada </option> 
+        <option value="pmt"> Poderia ser mais trabalhada</option> 
+        <option value="ft" >Foi trabalhada</option> 
+        <option value="bt" > Foi bem trabalhada</option> 
+
+    </select> 
+
+</fieldset>
+<fieldset> <legend>m relação a compreenção dos textos do trabalho:</legend> 
+
+<label for="lstserie" >Opções:</label>  
+
+    <select id="sltserie" class="posi1"> 
+        <option value="Mf" selected="selected">Muito fácil</option> 
+        <option value="f">Fácil</option> 
+        <option value="c" >Complicada</option> 
+        <option value="mc" >Muito complicada</option> 
+
+    </select> 
+    </fieldset>
+    <fieldset> <legend>Em relação a ao conteúdo do trabalho de forma quantativa:</legend> 
+
+<label for="lstserie" >Opções:</label>  
+
+    <select id="sltserie" class="posi1"> 
+        <option value="Fp" selected="selected">Conteúdo fora do pedido pelo professor </option> 
+        <option value="Ps">Pouco suficiente</option> 
+        <option value="s" >Suficiente</option> 
+        <option value="M" >Mais que o suficiente</option> 
+
+    </select> 
+    </fieldset>
+
+
+    <p>Nota:
+        <input type="number" id="txtNota" size="5" required="required" min="0" max="7" title="COLOQUE UM NÚMERO" />
+        </p>
+    <p> Faça um comentário sobre a avaliação do trabalho: </p>
+   <textarea id="Mensagem" name="Mensagem" rows="6" required="required" cols="40">
+   </textarea>
+   <br>
+<div class="Confirmar">
+    <input class="Confirmar" type="reset" value="Apagar as Informações"/> 
+
+        <input class="Confirmar" type="submit" value="Confirma o Cadastro" />
+
+        </div>
+    </form>
+    <footer>
+            <h1>Integrantes do Trabalho!</h1>
+            <p>Andrey Custódio da Silva Nº02</p>
+            <p>Derick Willams Tavares da Silva Nº04</p>
+            <p>João Vitor Pereira Gomes Nº13</p>
+            <p>Kennedy Cordeiro de Lima Nº17</p>
+            <p>Maria Eduarda Pereira de Assis Nº21</p>
+            <p>Nicollas Cardoso Cavalcante Correia Nº24 </p>
+            <p>Otto Fidélis Siqueira Nº27</p>
+    </footer>
+</body>
+</html>

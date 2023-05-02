@@ -1,0 +1,92 @@
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="Base.css">  
+        <title>estrutura cliente-servidor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <script>
+window.alert("Bem vindo a pagina de ESMD");
+window.alert("Aqui explicaremos um pouco sobre estrutura cliente-servidor ");
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="title">Estrutura e Modelagem de Dados</h1> <br>
+            <nav id="nav">
+                <a href="EMPR.html">EMPR</a>
+                <a href="LOGB.html">LOGB</a>
+                <a href="index.html">DSA1</a>
+                <a href="PRIT.html">PRIT</a>
+                <a href="FUTI.html">FUTI</a>
+            </nav>
+        </header> <br>
+        <section id="content">
+                <h1 class="titulo">estrutura cliente-servidor</h1> <br>
+
+                <div>
+                <h2>arquitetura cliente-servidor</h2>
+                 <img src="EMSD.jpg" >   
+                <p>A arquitetura de rede na qual existe um servidor que é o responsável 
+                    pelo processamento e o armazenamento das informações, e que por 
+               sua vez é acessado por computadores que solicitam serviços do 
+                    servidor é conhecida como cliente-servidor. Normalmente o 
+                    servidor é responsável por vários processos distintos, criados a 
+                    partir da solicitação dos clientes. Um cliente solicita serviços do 
+                    servidor quando estes são processos específicos e só podem ser 
+                    executados ou armazenados no servidor. Dependendo do tipo de 
+                    aplicação, um cliente pode interagir com um ou mais servidores. Em 
+                    geral os servidores tem maior capacidade de processamento do que 
+                    os clientes, de modo que possam atender as solicitações dos vários 
+                    clientes simultaneamente. A prioridade de atendimento das 
+                    requisições dos clientes é controlada pelo aplicativo ou banco de 
+                    dados, em conjunto com o sistema operacional. Nos servidores, é 
+                    comum existirem milhares de processos sendo executados 
+                    simultaneamente e concorrendo pela utilização dos recursos de hardware do servidor como processador, memória e 
+                    eventualmente por recursos de disco (storage). A maioria dos bancos de dados utiliza esta arquitetura, pois o SGBD é 
+                    instalado no servidor e os usuários utilizam um software cliente instalado no dispositivo local (notebook, celular, etc.), que seja 
+                    compatível com o SGBD. Atualmente, o acesso via Cloud Computing, onde o SGBD está instalado na infraestrutura de cloud 
+                    e o acesso é realizado por meio da Internet também é muito utilizado, porém o conceito de cliente server, bem como suas 
+                    vantagens são os mesmos.</p> <br>
+
+                 
+<h2>fluxo de silicitação em uma rede cliente-servidor</h2>
+
+        <ul>
+           <li>O cliente possui uma interface de software(client) para o acesso ao servidor</li>
+           <li>O cliente monta a solicitação preenchendo os campos da interface de software e monta as requisições</li>
+           <li> As requisições são enviadas ao servidor        </li>
+           <li>O servidor processa as requisições </li>
+           <li> O servidor devolve as requisições processadas para o cliente</li>
+        </ul>
+<br />
+<h2>Vantagens na utilização da arquitetura Cliente-Servidor</h2>
+<ul>
+<li>Como o cliente tem papel ativo na montagem das requisições, executando inclusive algumas validações básicas por meio 
+    da interface de software, o tráfego de rede é reduzido, porque o processamento mais importante é executado no servidor.</li>
+<li> É comum que os computadores envolvidos na arquitetura cliente-servidor sejam de fabricantes diferentes, e até mesmo 
+    utilizem sistemas operacionais diferentes. Por exemplo, é possível que uma estação configurada com o sistema 
+    operacional Linux acesse um servidor com o sistema operacional Windows e com um SGBD Oracle, por meio da interface 
+    de software (client). O que garante a compatibilidade é a comunicação por meio do protocolo TCP-IP. </li>
+<li> Redução de custos e a possibilidade de upgrade do servidor, caso haja aumento na utilização dos recursos 
+    (escalabilidade).</li>
+    </ul>
+    <br><br><br></div>
+
+        </section>
+        <footer>
+                <h1>Integrantes do Trabalho!</h1>
+                <p>Andrey Custódio da Silva Nº02</p>
+                <p>Derick Willams Tavares da Silva Nº04</p>
+                <p>João Vitor Pereira Gomes Nº13</p>
+                <p>Kennedy Cordeiro de Lima Nº17</p>
+                <p>Maria Eduarda Pereira de Assis Nº21</p>
+                <p>Nicollas Cardoso Cavalcante Correia Nº24 </p>
+                <p>Otto Fidélis Siqueira Nº27</p>
+        </footer>
+    </body>
+</html>
